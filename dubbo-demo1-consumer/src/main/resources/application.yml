@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: dubbo-demo1-consumer
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    deserialization:
+      #允许对象忽略json中不存在的属性
+      fail_on_unknown_properties: false
+    parser:
+      #允许出现特殊字符和转义符
+      allow_unquoted_control_chars: true
+      #允许出现单引号
+      allow_single_quotes: true
+  mvc:
+    throw-exception-if-no-handler-found:  true
+
+  resources:
+    add-mappings:  false
+
+# dubbo配置
+dubbo:
+  scan:
+    base-packages: cn.c3p0.cloud
+  protocol:
+    name: dubbo
+  registry:
+    address: nacos://nacos-server:8848
