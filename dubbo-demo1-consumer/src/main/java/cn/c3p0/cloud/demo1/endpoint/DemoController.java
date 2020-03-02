@@ -19,7 +19,8 @@ public class DemoController {
     public String test() {
 
         try {
-            demoService.testException();
+            Boolean result = demoService.testException();
+            log.info("result = {}", result);
         } catch (Exception e) {
             log.info("Instance of RuntimeException: {}", e instanceof RuntimeException);
             log.info("Instance of BaseException: {}", e instanceof BaseException);

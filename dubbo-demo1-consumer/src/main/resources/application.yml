@@ -25,4 +25,5 @@ dubbo:
   protocol:
     name: dubbo
   registry:
+    #address: zookeeper://zookeeper-server:2181
     address: nacos://nacos-server:8848

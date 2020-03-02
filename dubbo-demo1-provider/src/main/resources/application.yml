@@ -26,6 +26,7 @@ dubbo:
     name: dubbo
     port: 28121
   registry:
+    #address: zookeeper://zookeeper-server:2181
     address: nacos://nacos-server:8848
   provider:
     #group: ${common.application.group}
@@ -34,5 +35,5 @@ dubbo:
   #consumer:
     #cluster:
     #group: ${common.application.group}
-  metadata-report:
-    address: nacos://nacos-server:8848
+  #metadata-report:
+    #address: nacos://nacos-server:8848
