@@ -1,7 +1,7 @@
 package cn.c3p0.cloud.demo1.exception;
 
 import cn.c3p0.cloud.demo1.enums.ValueEnum;
-import com.alibaba.dubbo.rpc.RpcException;
+import org.apache.dubbo.rpc.RpcException;
 
 public class BaseRpcException extends RpcException {
 
