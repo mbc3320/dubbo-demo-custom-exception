@@ -32,6 +32,7 @@ dubbo:
     #group: ${common.application.group}
     timeout: 60000
     threads: 500
+    #filter: -exception
   #consumer:
     #cluster:
     #group: ${common.application.group}

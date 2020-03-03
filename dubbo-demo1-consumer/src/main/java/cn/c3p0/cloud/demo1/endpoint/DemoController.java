@@ -28,6 +28,17 @@ public class DemoController {
             log.error("Error: {}", e.getMessage(), e);
         }
 
+        try {
+            Boolean result = demoService.testRpcException();
+            log.info("result = {}", result);
+        } catch (Exception e) {
+            log.info("Instance of RuntimeException: {}", e instanceof RuntimeException);
+            log.info("Instance of BaseException: {}", e instanceof BaseException);
+            log.info("Instance of RpcException: {}", e instanceof RpcException);
+            log.error("Error: {}", e.getMessage(), e);
+        }
+
+
         return "ok";
     }
 }
