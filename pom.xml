@@ -15,7 +15,7 @@
         <version>2.2.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.joysim.cloud</groupId>
+    <groupId>cc.c3p0.cloud</groupId>
     <artifactId>dubbo-demo1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>dubbo-demo1</name>
