@@ -1,5 +1,6 @@
 package cn.c3p0.cloud.demo1.service.impl;
 
+import cn.c3p0.cloud.demo1.exception.BaseException;
 import cn.c3p0.cloud.demo1.exception.DemoException;
 import cn.c3p0.cloud.demo1.exception.DemoRpcException;
 import cn.c3p0.cloud.demo1.exception.status.DemoStatusCode;
@@ -21,5 +22,17 @@ public class DemoServiceImpl implements DemoService {
     public Boolean testRpcException() {
         log.info("try rpc exception...");
         throw new DemoRpcException(DemoStatusCode.ERROR1);
+    }
+
+    @Override
+    public Boolean testSignBaseException() throws BaseException {
+        log.info("try sign base exception...");
+        throw new DemoException(DemoStatusCode.ERROR1);
+    }
+
+    @Override
+    public void testSignDemoException() throws DemoException {
+        log.info("try sign demo exception...");
+        throw new DemoException(DemoStatusCode.ERROR1);
     }
 }
