@@ -6,6 +6,9 @@ public class BaseException extends RuntimeException {
 
     private ValueEnum status;
 
+    public BaseException() {
+    }
+
     public BaseException(ValueEnum status) {
 //        super(status.getCode(), status.getText());
         super(status.getText());

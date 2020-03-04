@@ -4,6 +4,9 @@ import cn.c3p0.cloud.demo1.exception.status.DemoStatusCode;
 
 public class DemoRpcException extends BaseRpcException {
 
+    public DemoRpcException() {
+    }
+
     public DemoRpcException(DemoStatusCode status) {
         super(status);
     }

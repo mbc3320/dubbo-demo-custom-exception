@@ -7,6 +7,9 @@ public class BaseRpcException extends RpcException {
 
     private ValueEnum status;
 
+    public BaseRpcException() {
+    }
+
     public BaseRpcException(ValueEnum status) {
         super(status.getCode(), status.getText());
         this.status = status;
